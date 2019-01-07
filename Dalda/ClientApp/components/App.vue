@@ -1,17 +1,48 @@
 <template>
     <div>
-        <h1>Welcome to Hands on Vue.js with ASP.NET Core!</h1>
-        <p>
-        The time is: {{ time }}!!!
-        The time is: {{ time }}
-        <ul>
-        <li v-for="user in users" :key="user.userName">
-        {{ user.fullName }} - {{ user.userName }}
-        </li>
-        </ul>
-        </p>
+        <router-view></router-view>
     </div>
 </template>
+<style>
+    p, ul {
+        margin: 0px;
+    }
+
+    li {
+        padding: 0px;
+        list-style: none;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    h6 {
+        font-size: 11px;
+    }
+</style>
+
 <script>
 export default {
     name: 'app',
